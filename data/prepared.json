@@ -1,0 +1,211 @@
+{
+  "place_name": "Living Stones, Leh, Ladakh, Upper Karzoo, Zangsti, Leh, Leh district, Ladakh, 194101, India",
+  "provider": "copernicus",
+  "center_lon_lat": [
+    77.5866776,
+    34.1718527
+  ],
+  "requested_half_size_m": 2500.0,
+  "crs": "EPSG:32643",
+  "origin_easting_northing_m": [
+    738422.0795882746,
+    3784235.052367939
+  ],
+  "bounds_projected_m": [
+    735922.0795882746,
+    3781735.052367939,
+    740922.0795882746,
+    3786735.052367939
+  ],
+  "dem_sha256": "d1eaaf59210ecea3c1810fde714479c94659ae74c5fa27255b8e3e09df3654b6",
+  "quality": {
+    "dataset": "Copernicus GLO-30 (AWS 2021 release)",
+    "surface_type": "DSM \u2014 reflective surface, includes vegetation and structures",
+    "nominal_resolution_m": 30,
+    "vertical_datum": "EGM2008 orthometric height",
+    "vertical_accuracy": "Dataset specification: <4 m at 90% confidence; not locally validated",
+    "local_accuracy_validated": false,
+    "acquisition": "Primarily 2011\u20132015; local infill may be older",
+    "attribution": "produced using Copernicus WorldDEM-30 \u00a9 DLR e.V. 2010-2014 and \u00a9 Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+    "reference": "https://registry.opendata.aws/copernicus-dem/",
+    "grid_spacing_m": 29.940119760479043,
+    "grid_samples": [
+      168,
+      168
+    ],
+    "processing": "Bilinear metric reprojection only; no terrain smoothing or vertical exaggeration",
+    "suitability": "Regional terrain interpretation. Site operations require suitable survey data and ground validation."
+  },
+  "source_windows": [
+    {
+      "url_or_file": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N34_00_E077_00_DEM/Copernicus_DSM_COG_10_N34_00_E077_00_DEM.tif",
+      "crs": "EPSG:4326",
+      "pixel_spacing_source_units": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "window_samples": [
+        207,
+        173
+      ]
+    }
+  ],
+  "imagery": {
+    "available": true,
+    "source": "Esri World Imagery",
+    "attribution": "Source: Esri, Vantor, Earthstar Geographics, and the GIS User Community",
+    "extent_projected_m": [
+      735922.0795882747,
+      3781735.052367939,
+      740922.0795882747,
+      3786735.052367939
+    ],
+    "crs": "EPSG:32643",
+    "width": 2048,
+    "height": 2048,
+    "export_pixel_spacing_m": 2.44140625,
+    "acquisition_date": "Not established for this image; imagery is not live",
+    "native_resolution": "Varies by imagery source; output pixel size does not establish source accuracy",
+    "service": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "source_records": [
+      {
+        "OBJECTID": "1717109",
+        "Shape": "Polygon",
+        "DATE (YYYYMMDD)": "20250201",
+        "RESOLUTION (M)": "0.31",
+        "ACCURACY (M)": "5",
+        "DESCRIPTION": "WV03",
+        "SOURCE_INFO": "Vivid",
+        "SOURCE": "Vantor",
+        "SRC_DATE2": "2/1/2025",
+        "MinMapLevel": "12",
+        "MaxMapLevel": "18",
+        "DrawOrder": "80",
+        "BlockName": "Vivid_Standard_IN01_26Q2",
+        "ReleaseName": "Raster Basemaps 2026.R07"
+      },
+      {
+        "OBJECTID": "953397",
+        "Shape": "Polygon",
+        "RESOLUTION (M)": "15",
+        "ACCURACY (M)": "12",
+        "DESCRIPTION": "TerraColor NextGen",
+        "SOURCE": "Earthstar Geographics",
+        "SOURCE_INFO": "TerraColor NextGen",
+        "SRC_DATE2": "Null",
+        "SRC_DATE": "Null",
+        "MinMapLevel": "0",
+        "MaxMapLevel": "11",
+        "DrawOrder": "70",
+        "BlockName": "Null",
+        "ReleaseName": "Null"
+      },
+      {
+        "OBJECTID": "1717109",
+        "Shape": "Polygon",
+        "DATE (YYYYMMDD)": "20250201",
+        "DESCRIPTION": "WV03",
+        "RESOLUTION (M)": "0.31",
+        "ACCURACY (M)": "5",
+        "SOURCE_INFO": "Vivid",
+        "SOURCE": "Vantor",
+        "SRC_DATE2": "2/1/2025",
+        "MinMapLevel": "12",
+        "MaxMapLevel": "18",
+        "DrawOrder": "80",
+        "BlockName": "Vivid_Standard_IN01_26Q2",
+        "ReleaseName": "Raster Basemaps 2026.R07"
+      },
+      {
+        "OBJECTID": "953397",
+        "Shape": "Polygon",
+        "DATE (YYYYMMDD)": "Null",
+        "RESOLUTION (M)": "15",
+        "ACCURACY (M)": "12",
+        "DESCRIPTION": "TerraColor NextGen",
+        "FROM_CACHE_LEVEL": "0",
+        "TO_CACHE_LEVEL": "11",
+        "SOURCE_INFO": "TerraColor NextGen",
+        "DRAW_ORDER": "70",
+        "DATE": "Null",
+        "SOURCE": "Earthstar Geographics",
+        "BlockName": "Null",
+        "ReleaseName": "Null"
+      },
+      {
+        "OBJECTID": "1717109",
+        "Shape": "Polygon",
+        "DATE (YYYYMMDD)": "20250201",
+        "RESOLUTION (M)": "0.31",
+        "ACCURACY (M)": "5",
+        "DESCRIPTION": "WV03",
+        "FROM_CACHE_LEVEL": "12",
+        "TO_CACHE_LEVEL": "18",
+        "SOURCE_INFO": "Vivid",
+        "DRAW_ORDER": "80",
+        "DATE": "2/1/2025",
+        "SOURCE": "Vantor",
+        "BlockName": "Vivid_Standard_IN01_26Q2",
+        "ReleaseName": "Raster Basemaps 2026.R07"
+      },
+      {
+        "OBJECTID": "1717109",
+        "Shape": "Polygon",
+        "SRC_DATE": "20250201",
+        "SRC_RES": "0.31",
+        "SRC_ACC": "5",
+        "SAMP_RES": "0.6",
+        "SRC_DESC": "WV03",
+        "MinMapLevel": "12",
+        "MaxMapLevel": "18",
+        "NICE_NAME": "Vivid",
+        "DrawOrder": "80",
+        "SRC_DATE2": "2/1/2025",
+        "NICE_DESC": "Vantor",
+        "Shape_Length": "98351.075857",
+        "Shape_Area": "175308261",
+        "BlockName": "Vivid_Standard_IN01_26Q2",
+        "ReleaseName": "Raster Basemaps 2026.R07"
+      },
+      {
+        "OBJECTID": "1717109",
+        "Shape": "Polygon",
+        "SRC_DATE": "20250201",
+        "SRC_RES": "0.31",
+        "SRC_ACC": "5",
+        "SAMP_RES": "0.6",
+        "SRC_DESC": "WV03",
+        "MinMapLevel": "12",
+        "MaxMapLevel": "18",
+        "NICE_NAME": "Vivid",
+        "DrawOrder": "80",
+        "SRC_DATE2": "2/1/2025",
+        "NICE_DESC": "Vantor",
+        "Shape_Length": "98351.075857",
+        "Shape_Area": "175308261",
+        "BlockName": "Vivid_Standard_IN01_26Q2",
+        "ReleaseName": "Raster Basemaps 2026.R07"
+      },
+      {
+        "OBJECTID": "1717109",
+        "Shape": "Polygon",
+        "SRC_DATE": "20250201",
+        "SRC_RES": "0.31",
+        "SRC_ACC": "5",
+        "SAMP_RES": "0.6",
+        "SRC_DESC": "WV03",
+        "MinMapLevel": "12",
+        "MaxMapLevel": "18",
+        "NICE_NAME": "Vivid",
+        "DrawOrder": "80",
+        "SRC_DATE2": "2/1/2025",
+        "NICE_DESC": "Vantor",
+        "Shape_Length": "98351.075857",
+        "Shape_Area": "175308261",
+        "BlockName": "Vivid_Standard_IN01_26Q2",
+        "ReleaseName": "Raster Basemaps 2026.R07"
+      }
+    ]
+  },
+  "prepared_utc": "2026-09-15T17:47:32Z"
+}

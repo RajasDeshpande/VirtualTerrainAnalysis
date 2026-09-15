@@ -1,0 +1,15 @@
+certs/*.key
+logs/*
+!logs/.gitkeep
+blender/*.blend1
+blender/__pycache__/
+tools/platform-tools/
+.venv/
+.test-runtime/
+builds/
+backups/
+data/build.lock
+**/__pycache__/
+
+maps.local.json
+.env*

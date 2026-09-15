@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "vertex_records_checked": 167226,
+  "max_elevation_difference_from_dem_m": 0.0,
+  "max_georeferenced_uv_error": 4.4631958018293005e-08,
+  "datum": "EGM2008 orthometric height",
+  "grid_spacing_m": 29.940119760479043,
+  "geometry_matches_source": true,
+  "local_survey_accuracy_validated": false,
+  "imagery_embedded": true
+}

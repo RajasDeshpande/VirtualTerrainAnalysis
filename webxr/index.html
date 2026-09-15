@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terrain intelligence</title><link rel="stylesheet" href="css/viewer.css">
+<script src="js/aframe-1.7.0.min.js"></script><script src="js/proj4-2.22.0.js"></script><script src="js/terrain.js"></script><script defer src="js/inspector.js"></script></head>
+<body>
+<header id="header"><div><span class="eyebrow">TERRAIN INTELLIGENCE / 3D + VR</span><h1 id="location-name">Loading selected terrain…</h1><small id="source-note">Reading data source…</small></div><nav><a href="choose.html">Choose terrain</a><a href="guide.html">Guide</a><button id="toggle-inspector" aria-expanded="true" aria-controls="panel">Inspector</button></nav></header>
+<div id="toolbar"><div role="group" aria-label="Terrain display"><button id="view-imagery" aria-pressed="false" disabled>Imagery</button><button id="view-slope" aria-pressed="true">Slope</button><button id="view-elevation" aria-pressed="false">Elevation</button></div><div role="group" aria-label="Navigation"><button id="overview">Fit overview</button><button id="explore">Explore · 1:1</button><button id="reset">Reset view</button></div></div>
+<aside id="panel" aria-label="Terrain inspector"><div class="section-heading"><h2>Location inspector</h2><span class="badge">DEM</span></div><p class="muted">Click terrain to inspect. Select a second point to compare heights.</p>
+<div id="selected-point" aria-live="polite">No point selected</div>
+<details><summary>Point measurements</summary><p id="measurement">No points selected.</p><button id="clear-points">Clear points</button><small>DEM estimates; not ground-survey measurements.</small></details>
+<section class="legend-section"><h2>Slope · degrees</h2><div id="legend"></div><small id="display-note">Colors show slope steepness, not elevation.</small></section>
+<details><summary>Data quality & downloads</summary><p id="quality"></p><p id="imagery-quality"></p><p id="summary-stats"></p><div class="downloads"><a id="download-stats">Statistics JSON</a><a id="download-points">Elevation CSV</a><a id="download-slopes">Slope CSV</a><a id="download-dem">DEM GeoTIFF</a><a id="download-checks">Verification</a></div></details>
+<details><summary>Navigation & VR</summary><p>Drag to look. WASD to fly; Q/E down/up. Click the terrain before using keyboard navigation.</p><p>Quest: left stick to fly; right stick up/down to rise/descend, left/right to snap turn. Right trigger teleports to surfaces under 45°.</p><small id="scale-label"></small><p id="xr-status"></p><p>Slope does not certify a safe route.</p></details>
+</aside>
+<footer id="footer"><span id="status" role="status">Loading terrain…</span><span id="error" role="alert"></span><span class="muted">Drag to look · WASD to fly · Click to inspect</span></footer><div id="credit"></div>
+  <a-scene embedded renderer="colorManagement: true; antialias: true" webxr="referenceSpaceType: local-floor" background="color: #162536" terrain-app>
+    <a-entity id="terrain" scale="0.01 0.01 0.01"></a-entity>
+    <a-plane id="floor" class="landing" rotation="-90 0 0" width="20000" height="20000" position="0 -0.1 0" color="#253747" material="roughness: 1"></a-plane>
+    <a-entity light="type: ambient; color: #ffffff; intensity: 1.1"></a-entity>
+    <a-entity light="type: directional; color: #ffffff; intensity: 1.6" position="-8 18 12"></a-entity>
+    <a-entity id="legend-vr" position="-18 5 5" rotation="0 40 0"></a-entity>
+    <a-entity id="rig" position="0 11 28" terrain-navigation>
+      <a-camera id="camera" position="0 1.6 0" rotation="-18 0 0" near="0.05" far="20000" wasd-controls="enabled: false" look-controls="pointerLockEnabled: false"></a-camera>
+      <a-entity id="left" laser-controls="hand: left" raycaster="enabled: false"></a-entity>
+      <a-entity id="right" laser-controls="hand: right" raycaster="objects: #terrain, .landing; far: 80; interval: 80" terrain-teleport></a-entity>
+    </a-entity>
+    <a-ring id="teleport-marker" rotation="-90 0 0" radius-inner="0.2" radius-outer="0.3" color="#ffffff" visible="false" material="shader: flat; side: double"></a-ring>
+  </a-scene>
+</body></html>
