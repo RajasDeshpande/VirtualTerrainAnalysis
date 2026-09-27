@@ -219,7 +219,3 @@ Source-specific attribution and provenance are stored with each build and displa
 - Aerial imagery dates and resolution may vary across one terrain extent.
 - Missing source samples stop a build instead of inventing elevation values.
 - Quest controller support is implemented, but each headset/browser/network setup should be tested independently.
-
-## License
-
-No project source-code license has been selected yet. Add a `LICENSE` file before presenting the repository as open source. Third-party software and geographic datasets retain their respective licences and terms.
